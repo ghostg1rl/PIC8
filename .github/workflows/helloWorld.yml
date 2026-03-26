@@ -1,33 +1,31 @@
 name: Hi World
 
-#when?
+# when?
 on:
-    push:
-        branches:
-            - main
-            - branch0
-    pull_request:
-        branches:
-            -main
-    workflow_dispatch:
+  push:
+    branches:
+      - main
+      - branch0
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
 
-#do what?
+# do what?
 jobs:
-    hi:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v4
-            - name: hi
-            run: echo "hi!"
-    hihi:
-        runs-on: ubuntu-latest
-        steps:
-            - name: hihi
-            run: echo "hihi!"
-    hihihi:
-        runs-on: ubuntu-latest
-        steps:
-            - name: hi
-            run: echo "hihihi!"
-
-            
+  hi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: hi
+        run: echo "hi!"
+  hihi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hihi
+        run: echo "hihi!"
+  hihihi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hi
+        run: echo "hihihi!"
