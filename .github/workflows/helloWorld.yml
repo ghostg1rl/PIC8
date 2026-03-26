@@ -6,10 +6,10 @@ on:
         branches:
             - main
             - branch0
-        workflow_dispatch:
     pull_request:
         branches:
             -main
+    workflow_dispatch:
 
 #do what?
 jobs:
@@ -29,3 +29,5 @@ jobs:
         steps:
             - name: hi
             run: echo "hihihi!"
+
+            
